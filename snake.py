@@ -33,7 +33,6 @@ class Snake():
     
     def grow(self):
         self.growing = True
-        print("growing")
 
     def draw(self):
         rect = []

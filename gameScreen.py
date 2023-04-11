@@ -64,16 +64,16 @@ def gameScreen():
         
 
         # Player events
-        if (keys[pygame.K_d]):
+        if (keys[pygame.K_d] or keys[pygame.K_RIGHT]):
             snake.move_right()
             
-        if (keys[pygame.K_a]):
+        elif (keys[pygame.K_a] or keys[pygame.K_LEFT]):
             snake.move_left()
 
-        if (keys[pygame.K_w]):
+        elif (keys[pygame.K_w] or keys[pygame.K_UP]):
             snake.move_up()
 
-        if (keys[pygame.K_s]):
+        elif (keys[pygame.K_s] or keys[pygame.K_DOWN]):
             snake.move_down()
 
         for event in pygame.event.get() : 

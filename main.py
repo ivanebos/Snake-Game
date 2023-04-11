@@ -1,4 +1,4 @@
-from screen import gameScreen
+from gameScreen import gameScreen
 
 def run():
     gameScreen()
